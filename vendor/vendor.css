@@ -1,0 +1,176 @@
+:root{
+    --nav:#535353;
+    --head:#6a5acd;
+    --background-color:#EBEBEB;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: var(--background-color); */
+}
+html{
+    scroll-behavior: smooth;
+}
+/* sticky nav */
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  } */
+.header{
+    height: 13vh;
+    margin: 0;
+}
+.header .head{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    background-color:var(--head);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px red solid; */
+}
+.header .head .headleft{
+    /* border: 1px red solid; */
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .head .headleft .logo{
+    /* border: 1px red solid; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .head .headleft img{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 50px;
+    height: 100%;
+}
+.header .head .headright{
+    /* border: 1px red solid; */
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+.header .head .headright .adminlogo{
+    /* border: 1px red solid; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.header .head .headright .adminlogo img{
+    border-radius: 50px;
+    height: 75%;
+}
+.header .head .headright .logout a{
+    /* border: 1px red solid; */
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.header .nav{
+    width: 100%;
+    padding: 0 7vw;
+    background: #535353;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: sticky;
+}
+.header .nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    width: 14rem;
+    padding: 0.5rem 0;
+}
+.header .nav a:hover{
+    color: #ffffff;
+    background-color: var(--head);
+    border: 0.01rem solid var(--nav);
+    /* background-color: #000000; */
+    padding: 0.3rem 0;
+    border-radius: 1rem;
+    border-bottom: 2px rgb(27, 190, 255) solid;
+}
+/* aplications */
+ .applications{
+    /* border: 1px red solid; */
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 6vw;
+    /* background-color: var(--background-color); */
+}
+ .applications .headtag{
+    /* border: 1px red solid; */
+    background-color:var(--head);
+    color: rgb(255, 255, 255);
+    padding: 4px 1px;
+    border-bottom: 2px rgb(27, 190, 255) solid;
+}
+.applications .headtagp h1{
+    /* border: 1px red solid; */
+    background-color:var(--head);
+    color: rgb(255, 119, 119);
+    padding: 4px 1px;
+    border-bottom: 2px rgb(27, 190, 255) solid;
+}
+ .applications .headtag h1{
+    font-size:1.8rem;
+}
+ .applications .application_table{
+    /* border: 1px red solid; */
+    background-color: var(--background-color);
+    height: 25rem;
+    overflow: auto;
+    padding: 10px;
+}
+ .applications .application_table .table thead{
+    position: sticky;
+}
+.table{
+    width: 100%;
+}
+.table, .table td,th{
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 30px;
+    border-collapse:collapse;
+}
+.table tr:hover {
+    background-color: #c0c3ed;
+}
+.table .action_icon{
+    width: 30px;
+    height: 25px;
+}
+.footer{
+    font-size: 1.1rem;
+    background-color: var(--nav);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+}

@@ -1,0 +1,58 @@
+
+/* status csss*/
+
+.applications{
+    /* border: 1px red solid; */
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 6vw;
+    /* background-color: var(--background-color); */
+  }
+  .applications .headtag{
+    /* border: 1px red solid; */
+    background-color:var(--head);
+    color: rgb(255, 255, 255);
+    padding: 4px 1px;
+    border-bottom: 2px rgb(27, 190, 255) solid;
+  }
+  .applications .headtag h1{
+    font-size:1.8rem;
+  }
+  .applications .application_table{
+    /* border: 1px red solid; */
+    background-color: var(--background-color);
+    height: 25rem;
+    overflow: auto;
+    padding: 10px;
+  }
+  .applications .application_table .table thead{
+    position: sticky;
+  }
+  .table{
+    width: 100%;
+  }
+  .table, .table td,th{
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 30px;
+    border-collapse:collapse;
+  }
+  .table tr:hover {
+    background-color: #c0c3ed;
+  }
+  .table .action_icon{
+    width: 30px;
+    height: 25px;
+  }
+  .footer{
+    font-size: 1.1rem;
+    background-color: var(--nav);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+  }
+  
+  
+  
