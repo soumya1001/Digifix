@@ -1,8 +1,8 @@
 <?php
-// session_start();
-// if(!isset($_SESSION['email'])){
-//   header('location:http://localhost/digifix/login.php');
-// }
+session_start();
+if(!isset($_SESSION['email'])){
+  header('location:http://localhost/digifix/login.php');
+}
 if($_SERVER['REQUEST_METHOD']=='POST'){
   $con = mysqli_connect('localhost','root','');
   if(!$con){

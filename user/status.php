@@ -193,7 +193,7 @@ if($sresult){
                     {
                         die(mysqli_error($con));
                       }
-                      $sql = "Select * from `digifix`.`complaint_approve` where `useremail`='$email' and `user_confirmation`='pending';";
+                      $sql = "Select * from `digifix`.`complaint_approve` where `useremail`='$email' and `user_confirmation`<>'Issue Resolved';";
                       
                     //   $sql = "Select * from `digifix`.`complaint_approve` where `useremail`='$useremail' AND `status`<>'Complaint Registred';";
                       $result=mysqli_query($con,$sql);

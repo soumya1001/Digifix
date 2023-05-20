@@ -134,6 +134,7 @@ if($sresult){
                         <th>Mobile No.</th>
                         <th>Device Name</th>
                         <th>Department</th>
+                        <th>User's Confirmation</th>
                         <th>Action</th>
                     </tr>
                    
@@ -155,6 +156,7 @@ if($sresult){
                             $userphone=$row['userphone'];
                             $problem=$row['name'];
                             $sl=$row['address'];
+                            $user_confirmation=$row['user_confirmation'];
                         echo '<tr>
                         <td>'. $complaintno.'</td>
                         <td>'.$username.'</td> 
@@ -162,7 +164,7 @@ if($sresult){
                         <td>'.$userphone.'</td>
                         <td>'.$problem.'</td> 
                         <td >'.$sl.'</td>
-                    
+                        <td >'.$user_confirmation.'</td>
                         <td>
                         <a href="./view_resolved_application.php?viewapplication='.$complaintno.'"><img class=action_icon src="../images/action_logo/view icon.png" alt=""></a>
                             </td>
@@ -178,7 +180,7 @@ if($sresult){
             </table>
         </div>
     </div>
-        <!-- pending... -->
+        <!-- resolved... -->
     <div class="applications" id="applications">
         <div class="headtag">
             <h1>Resolved Applications</h1>

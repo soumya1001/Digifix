@@ -114,7 +114,7 @@ if($sresult){
                         <th>Problem</th>
                         <!-- <th>Specification</th> -->
                         <!-- <th>Problem</th> -->
-                        <!-- <th>Address</th> -->
+                        <th>Department</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -137,7 +137,7 @@ if($sresult){
                             $problem=$row['problem'];
                             // $spec=$row['spec'];
                             // $problem=$row['problem'];
-                            // $address=$row['address'];
+                            $department=$row['address'];
                         echo '<tr>
                         <td>'.$complaint_no.'</td>
                         <td>'.$username.'</td> 
@@ -145,6 +145,7 @@ if($sresult){
                         <td>'.$userphone.'</td>
                         <td>'.$name.'</td> 
                         <td >'.$problem.'</td>
+                        <td >'.$department.'</td>
                         <td>
                         <a href="./view_application.php?viewapplication='.$complaint_no.'"><img class=action_icon src="../images/action_logo/view icon.png" alt=""></a>
                     
@@ -174,10 +175,10 @@ if($sresult){
                       <th>User Name</th>
                       <th>user Email</th>
                       <th>user phone</th>
+                        <th>Department</th>
                         <th>Device Problem</th>
                         <th>Vendor ID</th>
                         <th>Status</th>
-                        <!-- <th>Action</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -195,8 +196,9 @@ if($sresult){
                             $username=$row['username'];
                             $useremail=$row['useremail'];
                             $userphone=$row['userphone'];
+                            $department=$row['address'];
                             $problem=$row['problem'];
-                            // $spec=$row['spec'];
+                            
                             // $problem=$row['problem'];
                             $vendor=$row['vendor'];
                             $status=$row['status'];
@@ -205,6 +207,7 @@ if($sresult){
                         <td>'.$username.'</td> 
                         <td>'. $useremail.'</td> 
                         <td>'.$userphone.'</td>
+                        <td>'.$department.'</td>
                         <td>'.$problem.'</td> 
                         <td >'.$vendor.'</td>
                         <td >'.$status.'</td>

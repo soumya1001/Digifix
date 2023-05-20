@@ -101,7 +101,7 @@
             <button type="submit">Sign In</button>
             <!-- <div class="link forget-pass text-left"><a href="./forgot_password.php">Forgot password?</a></div>  -->
             <div class="alrady">
-              <i class="">Don't have an account <a href="./index.php">sing-Up</a></i>
+              <i class="">Don't have an account <a href="./index.php">sign-Up</a></i>
              </div>
           </form>
       </div>

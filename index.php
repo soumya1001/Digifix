@@ -1,16 +1,16 @@
 <?php
 $success=0;
 $user=0;
-// session_start();
-// if(isset($_SESSION['email'], $_SESSION['select'])){
-//     if($_SESSION['select']=='user'){
-//         header('location:http://localhost/digifix/user/user.php');
-//     }else if($_SESSION['select']=='admin'){
-//         header('location:http://localhost/digifix/admins/admin.php');
-//     }else if($_SESSION['select']=='vendor'){
-//         header('location:http://localhost/digifix/admins/admin.php');
-//     }
-// }else
+session_start();
+if(isset($_SESSION['email'], $_SESSION['select'])){
+    if($_SESSION['select']=='user'){
+        header('location:http://localhost/digifix/user/user.php');
+    }else if($_SESSION['select']=='admin'){
+        header('location:http://localhost/digifix/admins/admin.php');
+    }else if($_SESSION['select']=='vendor'){
+        header('location:http://localhost/digifix/admins/admin.php');
+    }
+}else
  if($_SERVER['REQUEST_METHOD']=='POST'){
       $con = mysqli_connect('localhost','root','');
       if(!$con){
@@ -102,7 +102,7 @@ $user=0;
           </select> 
             <button type="submit">Sign Up</button>
             <div class="alrady">
-              <i class="">Alrady have an account <a href="./login.php">sing-in</a></i>
+              <i class="">Alrady have an account <a href="./login.php">sign-in</a></i>
              </div>
           </form>
       </div>
